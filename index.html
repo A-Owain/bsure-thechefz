@@ -81,6 +81,37 @@ p{font-size:clamp(1rem,1.5vw,1.3rem);line-height:1.75}
 .system{padding:30px;border-radius:28px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.055);backdrop-filter:blur(12px)}
 .system img{height:58px;max-width:180px;object-fit:contain;margin-bottom:22px}
 .system .bsure-mini{font-size:1.65rem;font-weight:900;color:#fff;margin-bottom:23px}
+.bsure-mini {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 52px;
+  margin-bottom: 22px;
+  font-size: 1.45rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.bsure-mini a {
+  display: flex;
+  align-items: center;
+  line-height: 0;
+}
+
+.bsure-mini img {
+  display: block;
+  width: 108px;
+  height: 38px;
+  object-fit: contain;
+  object-position: left center;
+}
+
+.bsure-mini span {
+  display: flex;
+  align-items: center;
+  height: 38px;
+  line-height: 1;
+}
 .system ul{list-style:none;padding:0;margin:0;display:grid;gap:10px}.system li{padding:12px 14px;border-radius:12px;background:rgba(255,255,255,.05);color:#CFD6E8}
 .bridge{position:relative;height:220px;display:grid;place-items:center}.bridge:before,.bridge:after{content:"";position:absolute;width:46%;height:2px;background:linear-gradient(90deg,transparent,#8FA6FF)}.bridge:before{left:0}.bridge:after{right:0;transform:rotate(180deg)}
 .badge{width:150px;height:150px;border-radius:42px;display:grid;place-items:center;text-align:center;padding:18px;color:white;font-weight:850;
@@ -182,8 +213,21 @@ background-size:58px 58px;mask-image:linear-gradient(to bottom,transparent,black
  <div class="connect">
   <div class="system reveal"><img src="assets/thechefz-logo.svg" alt="The Chefz Business"><ul><li>Orders and approvals</li><li>Vendors and restaurants</li><li>Wallets and invoicing</li><li>Corporate operations</li></ul></div>
   <div class="bridge reveal"><div class="badge"><span>Experience<br>Intelligence</span></div></div>
-  <div class="system reveal"><div class="bsure-mini">BSure AI</div><ul><li>Contextual research</li><li>Response analysis</li><li>Theme detection</li><li>Actionable recommendations</li></ul></div>
- </div>
+  <div class="system reveal">
+    <div class="bsure-mini">
+      <a href="https://bsure.sa/" target="_blank" rel="noopener">
+        <img src="assets/bsure-logo.svg" alt="BSure">
+      </a>
+      <span>AI</span>
+    </div>
+  
+    <ul>
+      <li>Contextual research</li>
+      <li>Response analysis</li>
+      <li>Theme detection</li>
+      <li>Actionable recommendations</li>
+    </ul>
+  </div>
 </section>
 
 <section>
